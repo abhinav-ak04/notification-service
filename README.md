@@ -33,16 +33,16 @@ This microservice-style backend handles high-volume notifications efficiently us
 
 ## 📁 Folder Structure
 
-├── config/ # Configuration files\
-├── controllers/ # Business logic\
-├── jobs/ # BullMQ queue processors\
-├── notifications/ # Channel-specific logic (email, sms, in-app)\
-├── routes/ # Express route handlers\
-├── services/ # Redis & Queue setup\
-├── utils/ # Helper functions\
-├── worker/ # Queue consumers\
+├── db/ # MongoDB connection\
+├── jobs/ # BullMQ queue & worker logic\
+├── models/ # Mongoose models (e.g., Notification.js)\
+├── routes/ # API routes for notification requests\
+├── services/ # Email & SMS service logic\
 ├── .env # Environment variables (not committed)\
-└── server.js # Main server file\
+└── index.js # Main server file\
+└── .gitignore # Git ignore file\
+└── package.json # Project metadata and dependencies\
+└── README.md # Project documentation\
 
 ---
 
